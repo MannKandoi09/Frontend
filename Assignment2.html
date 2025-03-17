@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+    <style>
+        table{
+            border: 2px solid Brown;
+            background-color:  rgb(195, 166, 103);
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid rgba(147, 0, 0, 0.815);
+        }
+        thead{
+            color: teal;
+           
+        }
+       
+       
+    </style>
+    <body>
+        <table>
+            <caption>Stationery..</caption>
+            <thead>
+                <tr>
+                    <td>Item</td>
+                    <td style="background-color: lightgray; "> <b>Quantity </b></td>
+                    <td style="background-color: lightgray;"><b>Unit Price</b></td>
+                    <td style="background-color: lightgray;"><b>Price</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pencils</td>
+                    <td>2</td>
+                    <td>$1</td>
+                    <td>$2</td>
+                </tr>
+                <tr>
+                    <td>Erasers</td>
+                    <td>4</td>
+                    <td rowspan="2">$0.50</td>
+                    <td>$2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Sub Total</td>
+                    <td>$4</td>
+
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>10%</td>
+                    <td colspan="2">$0.4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Footer of the Table</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
